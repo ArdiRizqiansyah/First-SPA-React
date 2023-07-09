@@ -11,6 +11,8 @@ function App() {
         <Routes>
           <Route exact path="/welcome" element={<Welcome />} />
           <Route path="/products" element={<Products />} />
+          {/* route error */}
+          <Route path="*" element={<h1>Not Found!</h1>} />
         </Routes>
       </main>
     </div>
